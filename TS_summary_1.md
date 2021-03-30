@@ -8,7 +8,6 @@ TypeScript는 정적 타입체커 로써 버그가 많은 프로그램을 아예
 ```{.TypeScript}
 // @errors: 2551
 const obj = { width: 10, height: 15 };
-// 왜 이게 NaN이죠? 철자가 어렵네요!
 const area = obj.width * obj.heigth;
 ```
 이런 코드에서는 아래와 같은 오류를 표시해준다.
