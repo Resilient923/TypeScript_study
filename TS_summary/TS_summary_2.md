@@ -89,8 +89,8 @@ function deleteUser(user: User) {
 }
 ```
 
-JS에서 사용할 수 있는 기초 타입들중 ``boolean```,```bigint```,```null```,```number```,```string```,```symbol```,```object```,```undefined```는 인터페이스에서 사용할 수 있다.
-TS에서는 ```any```,```never``` 이라는 타입을 확장 할 수 있지만 거의 쓰지 않는다고 한다. ```void``` 라는 타입도 추가해준다.
+JS에서 사용할 수 있는 기초 타입들중 ```boolean``` , ```bigint``` , ```null``` , ```number``` , ```string``` , ```symbol```, ```object``` , ```undefined``` 는 인터페이스에서 사용할 수 있다.
+TS에서는 ```any``` , ```never``` 이라는 타입을 확장 할 수 있지만 거의 쓰지 않는다고 한다. ```void``` 라는 타입도 추가해준다.
 타입을 구축하기 위한 두 가지 구문이 있다는 것을 알 수 있다.
 ```Interfaces and Types -> interface를 우선적으로 사용 후에 특정 기능이 필요할 때 type을 사용하면 된다```
 
