@@ -125,6 +125,7 @@ TS는 코드가 시간에 따라 변수가 변경되는 방식을 이해하고, 
 |undefined|```typeof undefined ==="undefined"```|
 |function|```typeof f ==="function"```|
 |array|```Array.isArray(a)```|
+
 예를 들어 ```typeof obj ==="string"""을 이용하여 ```string```과 ```array```를 구분할 수 있으며 TS는 객체가 다른 코드 경로에 있음을 알게 된다.
 ```Javascript
 function wrapInArray(obj: string | string[]) {
