@@ -31,7 +31,7 @@ let sentence: string = `Hello, my name is ${ fullName }.
 I'll be ${ age + 1 } years old next month.`;
 ```
 ### 배열(Array)
-
+ 
 TS는 JS와 같이 값들을 배열로 다룰 수 있게 해준다. 배열 타입은 두가지 방법으로 쓸 수 있다.
 첫 번째 방법은, 배열 요소들을 나타내는 타입 뒤에 ```[]``` 를 쓰는 것이다.
 
