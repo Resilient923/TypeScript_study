@@ -31,7 +31,7 @@ TS에서는 함수 호출 시 따로 타입 정보를 제공할 필요 없으며
 함수 표현식이 숫자 나 문자열을 반환헀다면 , 타입 검사는 반환 타입이 ```SearchFunc``` 인터페이스에 정의된 반환 타입과 일치하지 않다면 당연히 에러를 발생시킨다.
 ```Javascript
 let mySearch: SearchFunc;
- 
+  
 // error: Type '(src: string, sub: string) => string' is not assignable to type 'SearchFunc'.
 // Type 'string' is not assignable to type 'boolean'.
 mySearch = function(src, sub) {
