@@ -25,7 +25,7 @@ const user = {
 interface User {
   name: string;
   id: number;
-}
+} 
 ```
 이제 변수 선언 뒤에 ```: TypeName```의 구문을 이용해 JS 객체가 새로운 ```ineterface```의 형태를 따르고 있음을 선언할 수 있다.
 ```Javascript
