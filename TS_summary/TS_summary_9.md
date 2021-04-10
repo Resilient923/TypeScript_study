@@ -104,14 +104,14 @@ type NetworkState =
   | NetworkSuccessState;
 ```
 위 예제를 보면 ```state```라는 필드는 공통적으로 가지고 있고, 각각 다른 필드를 가지고 있다.
-|    NetworkLoadingState            |NetworkFailedState                 |NetworkSuccessState                      |
-|----------------|---------------|------|
-|state        |state          |state           |
+|NetworkLoadingState|NetworkFailedState|NetworkSuccessState|
+|-------|------|------|
+|state|state |state|
 |      |code|response|
 리터럴 타입으로서 ```state```를 가지고 있으면 ```state```의 값은 대응하는 동일한 문자열과 대조되고 TS는 현재 어떤 타입이 사용되고 있는지 알 수 있다.
 |NetworkLoadingState|NetworkFailedState|NetworkSuccessState |
-|----------------|---------------|------|
-|"loading"        |"failed"     |"success|
+|------|------|------|
+|"loading"|"failed"|"success|
 이 경우에는 런타임 에러를 최소화 하기 위해서 ```switch```문을 사용한다.
 ```Javascript
 // @errors: 2339
