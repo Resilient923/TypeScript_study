@@ -113,6 +113,7 @@ type NetworkState =
 |NetworkLoadingState|NetworkFailedState|NetworkSuccessState |
 |------|------|------|
 |"loading"|"failed"|"success|
+
 이 경우에는 런타임 에러를 최소화 하기 위해서 ```switch```문을 사용한다.
 ```Javascript
 // @errors: 2339
