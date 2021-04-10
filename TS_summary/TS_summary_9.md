@@ -108,6 +108,7 @@ type NetworkState =
 |-------|------|------|
 |state|state |state|
 |      |code|response|
+
 리터럴 타입으로서 ```state```를 가지고 있으면 ```state```의 값은 대응하는 동일한 문자열과 대조되고 TS는 현재 어떤 타입이 사용되고 있는지 알 수 있다.
 |NetworkLoadingState|NetworkFailedState|NetworkSuccessState |
 |------|------|------|
