@@ -1,5 +1,5 @@
 # TypeScript_study
-타입스크립트 공식문서 정리(handBook)
+타입스크립트 공식문서 정리(handBook) 입니다
 
 
 
