@@ -31,7 +31,7 @@ class Octopus {
 ## 접근자(Accessors)
 TS는 객체의 멤버에 대한 접근을 가로채는 방식으로 getters/setters를 지원한다. 이를 통해 각 객체의 멤버에 접근하는 방법을 세밀하게 제어할 수 있다.
 간단한 클래스를 ```get```과 ```set```을 사용하도록 변한해본다. 아래 예시는 ```getter, setter```가 없는 예제이다.
-```Jacascript
+```Javascript
 class Employee {
     fullName: string;
 }
