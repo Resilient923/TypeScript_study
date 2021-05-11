@@ -130,7 +130,7 @@ function identity<T>(arg: T): T {
 let myIdentity: GenericIdentityFn<number> = identity; //<number>로 타입을 지정해주면된다.
 ```
 
-제네릭 열거형과 네임스페이스는 만들 수 없다.
+제네릭 인터페이스 외에도 제네릭 클래스를 만들 수 있다.  제네릭 열거형과 네임스페이스는 만들 수 없다.
 
 
 
