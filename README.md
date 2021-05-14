@@ -1,5 +1,6 @@
 # TypeScript_study
-타입스크립트 공식문서 정리(handBook) 입니다
+- 타입스크립트 공식문서 정리(handBook)
+- Node.js -> TypeScript 적용 연습 
 
 
 
