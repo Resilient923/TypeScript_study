@@ -21,7 +21,7 @@ Post.init({
 });
 
 export const associate = (dbType: any)=>{
-
+   
 };
 
 export default Post;
