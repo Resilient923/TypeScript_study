@@ -15,10 +15,25 @@ import hpp from 'hpp';
 //잘 알려진 몇가지 보안 이슈로부터 보호해주는 패키지
 import helmet from 'helmet';
 
+import {sequelize} from './models';
+import userRouter from './routes/user';
+import postRouter from './routes/post';
+
+
 dotenv.config();
 const app = express();
 const prod = process.env.NODE_ENV === 'production';
 app.set('port',prod?process.env.PORT:3065);
+
+
+sequelize.sync({force:false}) //  서버재시작시 테이블 초기화?
+    .then(()=>{
+        console.log('데이터베이스 연결');
+    })
+    .catch((err:Error)=>{
+        console.log(err);     
+    })
+
 if(prod){
     app.use(hpp());
     app.use(helmet());
@@ -51,6 +66,8 @@ app.use(expressSession({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use('/user',userRouter);
+app.use('/post',postRouter);
 app.get('/',(Request,Response,Nextfunction)=>{
     Response.send('server정상동작!');
 });
